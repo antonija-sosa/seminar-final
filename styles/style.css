@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+min-height: 100vh;
+  background-image: url('../images/7.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* height: 140vh; */
+}
+
+h1,h2,h3 {
+  font-family: "Lora", sans-serif;
+  color: #735240;
+}
+
+p, li, a, figcaption, th, td{
+  font-family: "Ysabeau Infant", sans-serif;
+  color: #735240;
+}
+
+/* main {
+  height: 75%;
+}
+
+/* header--------------------------------------------------------------------------------------------- */
+
+
+  /* height: 20%;} */
+header {
+  margin-bottom: 5em;
+  width: 100%;
+  height: 25%;
+}
+
+
+#logo1{
+  width: 10%;
+  min-width: 6rem;
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+
+
+.menu{
+  display:flex;
+  margin-right: 2%;
+  margin-top: 3%;
+  justify-content:right;
+  flex-wrap: wrap;
+}
+
+.menu a{
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  color:#735240;
+  
+}
+
+.menu a:hover {
+  color: #bfada3;
+  text-decoration: underline;
+}
+
+
+
+.menu li {
+  list-style: none;
+  padding:2.6%;
+  text-align: right;
+}
+/* header--------------------------------------------------------------------------------------------- */
+
+
+
+/* Index page--------------------------------------------------------------------------------------------- */
+.index{
+  /* display: flex; */
+  position:relative;
+}
+
+.index img{
+ margin-left: auto;
+ float: right;
+}
+
+.index h2{
+  /* display: inline-block; */
+  position: absolute;
+  margin-top: 15%;
+  margin-bottom: auto;
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  color: #735240;
+  margin-left: 1%;
+}
+
+/*Responsive Index body*/
+
+@media only screen and (max-width: 1500px) {
+  .index h2 {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .index h2 {
+  text-align: center;
+  position: relative;
+  color: #735240;
+  }
+}
+/* Index page--------------------------------------------------------------------------------------------- */
+
+/* footer--------------------------------------------------------------------------------------------- */
+
+footer {
+  /* height: 5%; */
+  background-color: linen;
+}
+
+footer p {
+  text-align: center;
+  color: #8C756A;
+  padding-top: 1rem;
+}
+/* footer--------------------------------------------------------------------------------------------- */
+
+
+/* o nama page -------------------------------------------------------------------------------------------------*/
+
+
+.onama{
+  display: grid;
+  width: 100%;
+  height: 75%;
+  grid-template-columns: 60% 40%;
+  }
+  
+  .text{
+   font-size: 1.7em;
+   letter-spacing: 105%;
+    color: #735240;
+  text-align: justify;
+  padding: 45px;
+  }
+  
+  
+  #underline-onama{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border: 1px solid #735240;
+  }
+  
+  .galerija{
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(13, auto);
+  grid-template-rows: repeat(12, auto);
+  padding: 45px;
+  }
+  
+  #slika4, #slika5{
+  width: 100%;
+  border-radius: 10px;
+  }
+  
+  #slika4{
+  grid-column-start: 7;
+  grid-column-end: 14;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  }
+  
+  #slika5{
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 5;
+  grid-row-end: 11;
+  }
+
+  /*onama body repsonsive*/
+  @media only screen and (max-width: 1500px) {
+    .onama{
+      display:grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+    }
+  }
+/* o nama page -------------------------------------------------------------------------------------------------*/
+
+
+
+ /* proizvodi i usluge -------------------------------------------------------------------------------------------------*/
+  .usluge-container {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+  }
+
+.anchor-tags h2{
+  margin-left: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+.anchor-tags li {
+  margin-bottom: 1rem;  
+}
+  .anchor-tags a {
+    font-size: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  .usluge {
+    margin-right: 2rem;
+  }
+
+  .usluge h2{
+    text-align: right;
+    margin-bottom: 1%;
+  }
+
+  .usluge p {
+    font-size: 1.2rem;
+    text-align: justify;
+   margin-top: 2%;
+    font-weight: 500;
+  }
+
+  .proizvodi{ 
+   margin-top: 3rem;
+   text-align: center;
+  
+ 
+  }
+
+  .proizvodi h2 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .proizvodi img {
+    width: 10rem;
+  }
+/* proizvodi i usluge -------------------------------------------------------------------------------------------------*/
+
+
+/* katalog --------------------------------------------------------------------------------------------------------------*/
+
+  .katalog {
+    display: flex;
+  }
+
+  figure {
+    display: inline-block;
+    width: 75%;
+    text-align: center; 
+}
+
+  .katalog img {
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+  }
+
+  figcaption > p {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 1.3em;
+    width: 350px;
+    margin: 20px auto;
+  }
+
+  .underline-katalog {
+    border: 0.5px solid #735240;
+    width: 350px;
+    margin: 20px auto;
+   
+  }
+/* katalog --------------------------------------------------------------------------------------------------------------*/
+
+/* cjenik -------------------------------------------------------------------------------------------------------------*/
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-bottom: 2rem;
+
+}
+
+th, td {
+  padding: 10px;
+  font-size: 200%;
+  border-bottom: 1px solid;
+  border-color: #735240;
+}
+
+
+.service {
+  text-align: left;
+}
+
+.price {
+  text-align: right;
+}
+/* cjenik -------------------------------------------------------------------------------------------------------------*/
+
+/* kontakt ------------------------------------------------------------------------------------------------------------*/
+
+.flex-kontakt {
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  width: 70%;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.contact-info {
+  width: 30%;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+/* ---forma--- */
+
+.form h2 {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+}
+
+.inline {
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input,
+textarea {
+  margin: 10px 0 0 0;
+  width: 70%;
+  min-height: 2em;
+}
+
+button {
+ border-radius: 5px;
+ background-color: linen;
+ padding: 5px 30px;
+margin-left: 10px;
+}
+/* kontakt ------------------------------------------------------------------------------------------------------------*/
